@@ -21,7 +21,7 @@ for (var i = 1; i <= 100; i++) {
   else {
     messaggio = i
   }
-  console.log(messaggio);
+  // console.log(messaggio);
   document.getElementById('lista').innerHTML += "<li>"+messaggio+"</li>"
 }
 // Scrivi un programma che stampi i numeri da 1
@@ -51,4 +51,12 @@ while (i<=100) {
   }
   i++
   document.getElementById("lista-while").innerHTML += "<li>"+messaggio+"</li>"
+}
+
+listaRandom =[0,1];
+numeroRandom = 0;
+for (var i = 1; i <= 100; i++) {
+  numeroRandom = Math.floor(Math.random() * 100 + 1);
+  listaRandom.push(numeroRandom)
+  console.log(listaRandom)
 }
