@@ -32,3 +32,23 @@ for (var i = 1; i <= 100; i++) {
 // Per i numeri che sono sia multipli di 3
 // che di 5 stampi FizzBuzz.
 // console.log(messaggio);
+i = 1;
+while (i<=100) {
+  fizz = i%3;
+  buzz = i%5;
+  fizzbuzz = i%15;
+  if (fizzbuzz == 0) {
+    messaggio = "fizzbuzz"
+  }
+  else if (buzz == 0) {
+    messaggio = "buzz"
+  }
+  else if ( fizz == 0) {
+    messaggio = "fizz"
+  }
+  else {
+    messaggio = i;
+  }
+  i++
+  document.getElementById("lista-while").innerHTML += "<li>"+messaggio+"</li>"
+}
