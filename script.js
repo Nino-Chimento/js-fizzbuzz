@@ -9,20 +9,20 @@ for (var i = 0; i < 100; i++) {
   buzz = i%5;
   fizzbuzz = i%15
 
-  if (fizz == 0) {
-    messaggio = "fizz"
+  if (fizzbuzz == 0) {
+    messaggio = "fizzbuzz"
   }
   else if (buzz == 0) {
-    messaggio ="buzz"
+    messaggio = "buzz"
   }
-  else if (fizzbuzz == 0) {
-    messaggio = "fizzbuzz"
+  else if (fizz == 0) {
+    messaggio = "fizz"
   }
   else {
     messaggio = i
   }
   console.log(messaggio);
-  document.getElementById('lista-numero').innerHTML =+ "<li>" + messaggio + "</li>"
+  document.getElementById('lista-numero').innerHTML =+ " messaggio + "</li>"
 }
 // Scrivi un programma che stampi i numeri da 1
 // a 100,
