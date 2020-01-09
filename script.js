@@ -22,7 +22,7 @@ for (var i = 1; i <= 100; i++) {
     messaggio = i
   }
   console.log(messaggio);
-  document.getElementById('numero').innerHTML =+ "messaggio "
+  document.getElementById('lista').innerHTML += "<li>"+messaggio+"</li>"
 }
 // Scrivi un programma che stampi i numeri da 1
 // a 100,
