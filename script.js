@@ -58,5 +58,23 @@ numeroRandom = 0;
 for (var i = 1; i <= 100; i++) {
   numeroRandom = Math.floor(Math.random() * 1000 + 1);
   listaRandom.push(numeroRandom);
-  console.log(numeroRandom);
+  // console.log(numeroRandom);
+}
+for (var i = 0; i < listaRandom.length; i++) {
+  fizz = listaRandom[i] % 3;
+  buzz = listaRandom[i] % 5;
+  fizzbuzz = listaRandom[i] % 15;
+  if (fizzbuzz == 0) {
+    messaggio ="fizzbuzz"
+  }
+  else if (buzz == 0) {
+    messaggio = "buzz"
+  }
+  else if (fizz == 0) {
+    messaggio = "fizz"
+  }
+  else {
+    messaggio = listaRandom[i]
+  }
+  document.getElementById('lista-random').innerHTML +="<li>"+ messaggio +"</li>"
 }
