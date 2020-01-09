@@ -3,7 +3,7 @@ var buzz;
 var fizzbuzz;
 var messaggio;
 
-for (var i = 0; i < 100; i++) {
+for (var i = 1; i <= 100; i++) {
   // console.log(i);
   fizz = i%3;
   buzz = i%5;
@@ -22,7 +22,7 @@ for (var i = 0; i < 100; i++) {
     messaggio = i
   }
   console.log(messaggio);
-  document.getElementById('lista-numero').innerHTML =+ " messaggio + "</li>"
+  document.getElementById('numero').innerHTML =+ "messaggio "
 }
 // Scrivi un programma che stampi i numeri da 1
 // a 100,
