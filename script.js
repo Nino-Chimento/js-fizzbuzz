@@ -1,15 +1,28 @@
 var fizz;
 var buzz;
 var fizzbuzz;
-
+var messaggio;
 
 for (var i = 0; i < 100; i++) {
   // console.log(i);
   fizz = i%3;
-  console.log(fizz);
+  buzz = i%5;
+  fizzbuzz = i%15
+
   if (fizz == 0) {
-    console.log("nino");
+    messaggio = "fizz"
   }
+  else if (buzz == 0) {
+    messaggio ="buzz"
+  }
+  else if (fizzbuzz == 0) {
+    messaggio = "fizzbuzz"
+  }
+  else {
+    messaggio = i
+  }
+  console.log(messaggio);
+  document.getElementById('lista-numero').innerHTML =+ "<li>" + messaggio + "</li>"
 }
 // Scrivi un programma che stampi i numeri da 1
 // a 100,
@@ -18,3 +31,4 @@ for (var i = 0; i < 100; i++) {
 // Buzz.
 // Per i numeri che sono sia multipli di 3
 // che di 5 stampi FizzBuzz.
+// console.log(messaggio);
