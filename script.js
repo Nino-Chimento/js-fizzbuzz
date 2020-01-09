@@ -52,11 +52,11 @@ while (i<=100) {
   i++
   document.getElementById("lista-while").innerHTML += "<li>"+messaggio+"</li>"
 }
-
-listaRandom =[0,1];
+// creazione lista numeri random
+listaRandom =[];
 numeroRandom = 0;
 for (var i = 1; i <= 100; i++) {
-  numeroRandom = Math.floor(Math.random() * 100 + 1);
-  listaRandom.push(numeroRandom)
-  console.log(listaRandom)
+  numeroRandom = Math.floor(Math.random() * 1000 + 1);
+  listaRandom.push(numeroRandom);
+  console.log(numeroRandom);
 }
